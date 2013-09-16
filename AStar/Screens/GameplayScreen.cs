@@ -202,10 +202,8 @@ namespace AIProject
         //calculates F
         public int calcf(Vector2 index)
         {
-            int g;
-            g = closedlist.Count;
-            int h;
-            h = (int)MathHelper.Distance(index.X, goal_node.X) + (int)MathHelper.Distance(index.Y, goal_node.Y);
+            int g = closedlist.Count;
+            int h = (int)MathHelper.Distance(index.X, goal_node.X) + (int)MathHelper.Distance(index.Y, goal_node.Y);
             return (g + h);
         }
 
